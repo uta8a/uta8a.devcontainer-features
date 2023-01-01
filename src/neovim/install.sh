@@ -1,13 +1,13 @@
 #!/bin/sh
 set -e
 
-echo "Activating feature 'color'"
-echo "The provided favorite color is: ${FAVORITE}"
+echo "Activating feature 'neovim'"
 
-cat > /usr/local/bin/color \
-<< EOF
-#!/bin/sh
-echo "my favorite color is ${FAVORITE}"
-EOF
+# only support debian, ubuntu
+apt-get update
+apt-get install -y wget
 
-chmod +x /usr/local/bin/color
+# install neovim nightly deb package
+wget -P /tmp 'https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.deb'
+apt-get install /tmp/nvim-linux64.deb
+rm /tmp/nvim-linux64.deb

@@ -16,6 +16,7 @@ jobs:
         features:
           - color
           - hello
+          - neovim
         baseImage:
           - debian:latest
           - ubuntu:latest
