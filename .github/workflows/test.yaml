@@ -14,9 +14,8 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
           - neovim
+          - vim
         baseImage:
           - debian:latest
           - ubuntu:latest
