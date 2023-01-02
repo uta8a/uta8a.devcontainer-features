@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 
+# WIP
 echo "Activating feature 'color'"
 echo "The provided favorite color is: ${FAVORITE}"
 
