@@ -2,6 +2,15 @@
 
 For my personal use.
 
+## done
+
+- `neovim`: Neovim nightly
+- `vim`: vim latest
+
+## wip
+
+- `riscv-dev`: cross-compile risc-v environment
+
 ### `neovim`
 
 Running `nvim` inside the built container will execute [Neovim](https://neovim.io/) nightly.
